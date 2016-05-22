@@ -1,7 +1,7 @@
 var token;
 
 function authorize() {
-  var clientId = “<enter your client id>”;
+  var clientId = "<enter your client id>";
   var redirectUrl = "https%3A%2F%2F<enter your chrome extension id>.chromiumapp.org%2Foauth2";    
   var authUrl = "https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=" + clientId + "&response_type=id_token+token&scope=openid%20https%3A%2F%2Foutlook.office.com%2Fcontacts.read&response_mode=fragment&state=167381&nonce=678910&redirect_uri=" + redirectUrl;
   chrome.identity.launchWebAuthFlow(
