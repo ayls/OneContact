@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "OneContact",
+  "description": "All contacts in one spot",
+  "version": "1.0",
+  "permissions": ["tabs", "identity", "https://*.mail.live.com/?page=Compose", "https://login.microsoftonline.com/common/oauth2*", "https://outlook.office.com/api/v2.0/me/contacts*"],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": ["popup.js"]
+  }
+}
